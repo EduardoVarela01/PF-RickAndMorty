@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Ultimate Rick and Morty Squad!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-shadow: 2px 2px 4px #aaa;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            width: 80%;
+            max-width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #RickMorty-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        #History-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>¡Construye tu escuadrón definitivo de Rick y Morty!</h1>
+    <div id="RickMorty-alert"></div>
+    <input type="text" id="RickMorty" placeholder="Enter RickMorty name">
+    <button id="Search">Search</button>
+    <button id="New-team" disabled>Start again</button>
+    <div id="RickMorty-container"></div>
+    <button type="button" id="Show-history">Show history</button>
+    <button id="Filter-human">Filter Humans</button>
+    <button id="Filter-male">Filter Male</button>
+    <button id="Filter-female">Filter Female</button>
+    <button id="Filter-humanoid">Filter Humanoid</button>
+    <select id="Color-selector">
+
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+    </select>
+    <div id="History-container"></div>
+    <script src="App.js"></script>
+</body>
+
+</html>

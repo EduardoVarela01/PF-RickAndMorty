@@ -1,0 +1,154 @@
+/* Estilo de la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.search-button:hover {
+    background-color: #2980b9;
+}
+
+/* Resto de los estilos que proporcionaste (sin cambios) */
+
+/* Controles del usuario */
+.user-controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo común para todos los botones */
+.user-input,
+.user-select,
+.action-button,
+#New-team,
+#Show-history,
+#Filter-male,
+#Filter-female,
+#Filter-human,
+#Filter-humanoid {
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Color y estilo del botón de búsqueda */
+.action-button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Color y estilo del botón de inicio nuevamente */
+#New-team {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+/* Color y estilo del botón de historial */
+#Show-history {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Color y estilo del botón de filtro de género masculino */
+#Filter-male {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Color y estilo del botón de filtro de género femenino */
+#Filter-female {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Color y estilo del botón de filtro de humanos */
+#Filter-human {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+/* Hover para todos los botones */
+.user-input:hover,
+.user-select:hover,
+.action-button:hover,
+#New-team:hover,
+#Show-history:hover,
+#Filter-male:hover,
+#Filter-female:hover,
+#Filter-humanoid,
+#Filter-human:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: scale(1.05);
+}
+/* Estilo del select */
+.user-select {
+    position: relative;
+}
+
+.user-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 12px 20px; /* Ajustado el padding para que sea similar a los otros botones */
+    font-size: 16px; /* Ajustado el tamaño de fuente para que sea similar a los otros botones */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.user-select select:hover {
+    background-color: #f9f9f9;
+}
+
+.user-select select:focus {
+    border-color: #3498db;
+}
+/* Estilo de la tarjeta de personaje */
+.character-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #e08787;
+    border-radius: 8px;
+    background-color: rgb(126, 245, 154); /* Color de fondo de la tarjeta */
+    box-shadow: 0 4px 8px rgb(233, 5, 5); /* Sombra ligera */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.character-card:hover {
+    background-color: #dfe6e9; /* Cambia el color de fondo al pasar el ratón */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
+}
+
